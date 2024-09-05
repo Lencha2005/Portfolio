@@ -1,16 +1,20 @@
 .hero-section {
+    /* position: relative; */
     background-image: url(/img/hero/hero-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-padding: 281px 17px 32px 16px;
+/* padding: 281px 17px 32px 16px; */
 }
 @media screen and (min-resolution: 192dpi) {
     .hero-section {
   background-image: url(/img/hero/hero-mobile@2x.png);
     }  
 }
-
+.hero-container {
+    position: relative;
+    padding: 281px 17px 32px 16px;
+}
 .hero-title {
     width: 343px;
 font-size: 50px;

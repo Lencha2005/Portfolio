@@ -1,0 +1,44 @@
+.header {
+    /* position: absolute;
+    top: 32px;
+    left: 16px; */
+    z-index: 9999;
+}
+.container {
+}
+.btn-menu {
+    display: none;
+}
+.header-container {
+    position: absolute;
+    top: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 343px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-wrap {
+    display: flex;
+    gap: 8px;
+}
+.logo-img {
+    display: block;
+    
+}
+.logo-icon {
+    fill: var(--white);
+}
+.btn-modal {
+    border: none;
+  list-style: none;
+  background: transparent;
+  padding: 0px;
+    stroke: var(--white);
+    margin-left: auto;
+}
+
+
+/* ============ mobile menu ============= */
+
