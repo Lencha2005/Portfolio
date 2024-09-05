@@ -74,12 +74,14 @@ border-color: var(--white);
   @media screen and (min-width: 768px) {
     .hero-section {
         background-image: url(/img/hero/hero-tablet.png);
-    padding: 300px 32px 32px 32px;
     }
     @media screen and (min-resolution: 192dpi) {
         .hero-section {
       background-image: url(/img/hero/hero-tablet@2x.png);
         }  
+    }
+    .hero-container{
+        padding: 300px 32px 32px 32px;
     }
     .hero-title {
         width: 632px;
@@ -111,13 +113,16 @@ border-color: var(--white);
   @media screen and (min-width: 1440px){
     .hero-section {
         background-image: url(/img/hero/hero.png);
-    padding: 300px 32px 32px 178px;
+    
     }
 
 @media screen and (min-resolution: 192dpi) {
     .hero-section {
       background-image: url(/img/hero/hero@2x.png);
         }  
+    }
+    .hero-container{
+        padding: 300px 32px 32px 178px;
     }
     .hero-title {
         width: 1112px;
