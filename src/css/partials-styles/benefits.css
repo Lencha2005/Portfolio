@@ -50,3 +50,27 @@ font-size: 16px;
 letter-spacing: -0.02em;
 color: var(--white);
 }
+
+@media screen and (min-width: 768px){
+    .benefits {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .benefits-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+    }
+    .benefits-item {
+        width: calc((100% - 16px) / 2);
+    }
+}
+@media screen and (min-width: 1440px){
+    .benefits-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .benefits-list {
+        width: 680px;
+    }
+}
