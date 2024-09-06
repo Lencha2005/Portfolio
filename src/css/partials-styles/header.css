@@ -1,10 +1,18 @@
 .header {
-    /* position: absolute;
+    position: absolute;
     top: 32px;
-    left: 16px; */
+    left: 0px;
     z-index: 9999;
+    display: flex;
+    /* gap: 151px; */
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container {
+    /* position: relative; */
 }
 .btn-menu {
     display: none;
@@ -15,12 +23,12 @@
 }
 
 .header-container {
-    position: absolute;
-    top: 32px;
+    position: relative;
+    /* top: 32px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 343px;
+    width: 343px; */
     /* margin-left: auto;
     margin-right: auto; */
 }
@@ -152,7 +160,10 @@ color: var(--white);
 }
 
 @media screen and (min-width: 1440px){
+    .header {
+        left: 32px;
+    }
     .header-container{
-        width: 1376px;
+        width: 1560px;
     }
 }
