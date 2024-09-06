@@ -43,6 +43,9 @@
 }
 
 .about-me-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .about-me-item {
 }
@@ -93,6 +96,9 @@ letter-spacing: -0.02em;
     }
     .about-me-item-skills {
         font-size: 20px;
+        }
+        .about-me-list {
+            gap: 32px;
         }
 }
 
