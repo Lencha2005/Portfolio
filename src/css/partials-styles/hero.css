@@ -79,8 +79,8 @@ font-size: 12px;
         background-image: url(/img/hero/hero-tablet.png);
         padding-top: 300px;
         padding-bottom: 32px;
-        padding-left: 21px;
-        padding-right: 32px;
+        /* padding-left: 21px;
+        padding-right: 32px; */
     }
     @media screen and (min-resolution: 192dpi) {
         .hero-section {
@@ -128,7 +128,7 @@ font-size: 12px;
 
     .hero-title {
         width: 1112px;
-    margin-bottom: 243px;
+    margin: 0 146px 243px 146px;
     }
     
   }

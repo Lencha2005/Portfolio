@@ -78,6 +78,9 @@ letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 768px){
+    .about-me {
+        padding-bottom: 48px;
+    }
     .about-me-wrapper-text {
         padding: 64px 64px 436px 64px;
     }
@@ -94,6 +97,10 @@ letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: 1440px) {
+    .about-me {
+        padding-top: 96px;
+        padding-bottom: 82px;
+    }
     .about-me-wrap {
         flex-direction: row;
     }
