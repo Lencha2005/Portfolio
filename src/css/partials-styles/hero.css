@@ -15,6 +15,7 @@ padding-bottom: 32px;
     display: flex;
     flex-direction: column;
     gap: 212px;
+    align-items: center;
 }
 .hero-title {
     width: 343px;
@@ -28,10 +29,10 @@ text-transform: uppercase;
 .hero-list {
     display: flex;
     gap: 4px;
-    justify-content: flex-end;
+    justify-content: center;
     max-width: 342px;
     margin-right: auto;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 .hero-item {
