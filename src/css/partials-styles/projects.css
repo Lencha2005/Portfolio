@@ -1,6 +1,6 @@
 .projects {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 64px;
 }
 .projects-title {
     font-weight: 600;
@@ -79,11 +79,12 @@ padding: 14px;
 width: 52px;
 height: 52px;
 background: transparent;
-stroke: var(--white);
+stroke: black;
 }
 .icon-arrow {
     width: 24px;
     height: 24px;
+    stroke: black;
 }
 .arrow-left {
     transform: rotate(-180deg);
@@ -92,7 +93,7 @@ stroke: var(--white);
 @media screen and (min-width: 768px) {
     .projects {
         padding-top: 48px;
-        padding-bottom: 48px;
+        padding-bottom: 96px;
     }
     .projects-wrap {
         margin-bottom: 64px;
@@ -141,7 +142,7 @@ stroke: var(--white);
 @media screen and (min-width: 1440px) {
     .projects {
         padding-top: 82px;
-        padding-bottom: 82px;
+        padding-bottom: 164px;
     }
     .projects-wrap-list {
         margin-bottom: 223px;
