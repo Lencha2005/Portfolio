@@ -127,7 +127,7 @@ font-size: 12px;
   @media screen and (min-width: 1440px){
     .hero-section {
         background-image: url(/img/hero/hero.png);
-        padding: 300px 32px 32px 178px;
+        /* padding: 300px 32px 32px 178px; */
     }
 
 @media screen and (min-resolution: 192dpi) {

@@ -74,6 +74,12 @@
   transform: translateX(100%);
   transition: var(--timing-function);
 }
+
+@media screen and (min-resolution: 192dpi) {
+    .mobile-menu {
+  background-image: url(/img/hero/hero-mobile@2x.png);
+    }  
+}
 .mobile-menu.is-open {
     transform: translate(0);
 
@@ -160,10 +166,10 @@ color: var(--white);
 }
 
 @media screen and (min-width: 1440px){
-    .header {
+    /* .header {
         left: 32px;
-    }
+    } */
     .header-container{
-        width: 1560px;
+        width: 1376px;
     }
 }
