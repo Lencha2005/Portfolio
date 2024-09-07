@@ -3,41 +3,39 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-/* padding-top: 281px;
-padding-bottom: 32px; */
+    padding-top: 281px;
+padding-bottom: 32px;
 }
-/* @media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi) {
     .hero-section {
   background-image: url(/img/hero/hero-mobile@2x.png);
     }  
-} */
+}
 .hero-container {
-    position: relative;
-    padding-top: 281px;
-padding-bottom: 32px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 212px;
-    align-items: center; */
+    align-items: center;
+    width: 100%;
 }
 .hero-title {
-    /* max-width: 340px; */
+    width: 343px;
     font-weight: 500;
 font-size: 48px;
 line-height: 1;
 letter-spacing: -0.03em;
 text-transform: uppercase;
-/* margin-left: 16px;
-margin-right: auto; */
-margin-bottom: 212px;
+text-align: left;
 }
 
 .hero-list {
     display: flex;
-    gap: 4px;
-    justify-content: center;
-    max-width: 342px;
-    margin-right: auto;
+    /* gap: 4px; */
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 342px; */
+    /* margin-right: auto; */
     /* margin-left: auto; */
 }
 

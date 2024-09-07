@@ -1,25 +1,37 @@
-/* .container {
-    position: relative;
-} */
-.header-container {
-    position: absolute;
-    top: 32px;
-    /* left: 0px; */
-    z-index: 9999;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-width: 320px;
-    /* margin-left: auto;
-    margin-right: auto; */
-}
-
 .btn-menu {
     display: none;
 }
 .btn-link-order-project {
     display: none;
+}
 
+.header {
+    /* position: relative;
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px; */
+    /* padding-top: 32px; */
+    /* margin-right: auto;
+    padding-left: auto;
+    position: relative; */
+    /* top: 32px; */
+    /* left: 32px; */
+    /* z-index: 1000; */
+    /* min-width: 320px; */
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+.header-container {
+    /* position: absolute; */
+    /* top: 32px; */
+    /* left: 0px; */
+    /* z-index: 9999; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* width: 100%; */
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .logo-wrap {
@@ -30,13 +42,12 @@
 .logo-icon {
     fill: var(--white);
 }
+
 .btn-mobile-menu-open {
     border: none;
   list-style: none;
   background: transparent;
-  /* padding: 0px; */
     stroke: var(--white);
-    /* margin-left: auto; */
 }
 
 /* ============ mobile menu ============= */
