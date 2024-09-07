@@ -18,7 +18,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     <title>Portfolio</title>
 
     <script type="module" crossorigin src="/Portfolio/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DKrUtRxJ.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-C1GRNacI.css">
   </head>
   <body>
     <section class="header">
@@ -35,11 +35,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
                 width="80"
                 height="80"
               />
-    <svg class="logo-icon" width="84" height="19"><use href="/Portfolio/assets/sprite-CI0rUdhu.svg#man"></use></svg>
+    <svg class="logo-icon" width="84" height="19"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#man"></use></svg>
     </div>
     <button class="btn-menu" type="button">Menu</button>
     <button class="btn-mobile-menu-open" type="button">
-    <svg class="header-mobile-menu-icon" width="28" height="28"><use href="/Portfolio/assets/sprite-CI0rUdhu.svg#burger"></use>
+    <svg class="header-mobile-menu-icon" width="28" height="28"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#burger"></use>
     </svg>
 </button>
     <a class="btn-link-order-project" href="#work-together">Order the progect</a>
@@ -52,7 +52,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
 <div class="mobile-menu">
     <button class="btn-close-menu" type="button">
     <svg class="icon-close-menu" width="28" height="28">
-    <use href="/Portfolio/assets/sprite-CI0rUdhu.svg#close"></use>
+    <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#close"></use>
 </svg>
 </button>
     <ul class="mobile-menu-list">
@@ -235,8 +235,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             </div>
         </div>
             <div class="project-wrap-btn-arrow">
-                <button class="btn-arrow"><svg class="icon-arrow arrow-left"><use href="/Portfolio/assets/sprite-CI0rUdhu.svg#arrow-white"></use></svg></button>
-                <button class="btn-arrow"><svg class="icon-arrow"><use href="/Portfolio/assets/sprite-CI0rUdhu.svg#arrow-white"></use></svg></button>
+                <button class="btn-arrow"><svg class="icon-arrow arrow-left"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
+                <button class="btn-arrow"><svg class="icon-arrow"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
             </div>
         
     </div>
@@ -340,9 +340,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
         </div>
     </div>
 </section> -->
-    </main>
-
-    <section class="work-together" id="work-together">
+      <section class="work-together" id="work-together">
     <div class="container work-container">
         <div class="work-wrap">
     <img class="work-img" src="../img/header/man.png" alt="avatar Lloyd">
@@ -352,10 +350,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
 <p class="work-title text-title">together</p>
     <form class="work-form">
         <label class="form-label">
-            <input class="form-input" type="email" name="email" placeholder="clients@gmail.com" >
+            <input class="form-input" type="email" name="email" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+            <span class="underline"></span>
         </label>
         <label class="form-label">
-            <input class="form-input" type="text" name="comments" placeholder="comments">
+            <input class="form-input" type="text" name="comments" placeholder="comments" >
         </label>
         <button class="form-btn" type="submit">Send</button>
     </form>
@@ -367,6 +366,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     </ul>
 </div>
 </section>
+
+
+<div class="deckdrop">
+    <div class="modal">
+        <button class="modal-close-btn">
+            <svg class="modal-slose-icon">
+                <use href="../img/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
+        <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    </div>
+</div>
+    </main>
+
+    
 
   </body>
 </html>
