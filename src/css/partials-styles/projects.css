@@ -137,6 +137,7 @@ stroke: black;
     .icon-arrow{
         width: 32px;
         height: 32px;
+        fill: white;
     }
 }
 @media screen and (min-width: 1440px) {
