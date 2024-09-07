@@ -11,20 +11,26 @@
     }   
 } */
 
-.cover-container {
-    position: relative;
+.covers {
+  height: 508px;
+  width: 375px;
+  position: relative;
     background-image: url(/img/covers/cover-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 508px;
-    width: 375px;
+}
+.cover-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
 }
 .cover-wrap {
     position: absolute;
   right: -800px;
   left: -400px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 .cover-list {
