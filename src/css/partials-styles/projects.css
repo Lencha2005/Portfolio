@@ -1,6 +1,6 @@
 .projects {
     padding-top: 32px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 }
 .projects-title {
     font-weight: 600;
@@ -93,7 +93,7 @@ stroke: black;
 @media screen and (min-width: 768px) {
     .projects {
         padding-top: 48px;
-        padding-bottom: 96px;
+        padding-bottom: 48px;
     }
     .projects-wrap {
         margin-bottom: 64px;
@@ -142,7 +142,7 @@ stroke: black;
 @media screen and (min-width: 1440px) {
     .projects {
         padding-top: 82px;
-        padding-bottom: 164px;
+        padding-bottom: 82px;
     }
     .projects-wrap-list {
         margin-bottom: 223px;

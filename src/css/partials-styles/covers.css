@@ -26,7 +26,7 @@
 }
 .cover-wrap {
     position: absolute;
-  right: -800px;
+  right: -1000px;
   left: -400px;
   overflow: hidden;
   /* height: 508px; */
@@ -66,8 +66,22 @@
   .covers {
     height: 960px;
       background-image: url(/img/covers/cover-tablet.png);
-
   }
+  .cover-img {
+    width: 544px;
+    height: 314px;
+}
+.cover-list {
+ gap: 50px;
+ margin-bottom: 65px;
+}
+.cover-wrap {
+right: -2000px;
+}
  
 }
-@media screen and (min-width: 1440px){}
+@media screen and (min-width: 1440px){
+  .cover-wrap {
+    right: -2500px;
+    }
+}
