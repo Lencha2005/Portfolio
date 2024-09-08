@@ -1,34 +1,22 @@
 import Accordion from 'accordion-js';
 
 const elBtn = document.querySelectorAll('.title-wrap');
-const icons = document.querySelectorAll('.icon-btn-open');
-console.log(elBtn);
 
-icons.forEach(icon => {
-    icon.classList.toggle('icon-return')
-})
-elBtn.forEach(btn => {
-    btn.addEventListener('click', onOpenDescription)
+const scrollDown = (currentElement) => {
+    const elementRect = currentElement.getBoundingClientRect();
+    const elementY = elementRect.top;
+    const viewportHeight = window.innerHeight;
 
-})
-function onOpenDescription(event){
-    icons.forEach(icon => {
-        console.log(event.target)
-        if(event.currentTarget === icon){
-            icon.classList.toggle('icon-return')
-        }
-    })
+    window.scrollTo({
+        top: elementY + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2),
+        behavior: 'smooth'
+    });
+
 };
-// onOpenDescription()
-// elBtn.addEventListener('click', onOpenDescription);
 
-
-const accordion = new Accordion('.accordion-container',{
+new Accordion('.accordion-container',{
     duration: 500,
     showMultiple: true,
-    elementClass: 'about-me-item',
-    triggerClass: 'btn-open-description',
-    panelClass: 'ac-panel',
-    activeClass: 'is-active',
+    openOnInit: [0],
+    onOpen: currentElement => scrollDown(currentElement),
 });
-accordion.open(0);

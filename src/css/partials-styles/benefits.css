@@ -79,6 +79,9 @@ border: 1.2px solid rgba(250, 250, 250, 0.5);
         display: flex;
         justify-content: space-between;
     }
+    .benefits-title {
+        margin-bottom: 0;
+    }
     .benefits-list {
         width: 680px;
     }

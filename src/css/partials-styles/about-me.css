@@ -48,12 +48,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 32px;
 }
-.about-me-item {
+.about-me-item.ac {
     padding-bottom: 20px;
     margin-top: 0;
     border: none;
     background-color: transparent;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 .title-wrap {
     display: flex;
@@ -79,6 +81,10 @@
     height: 18px;
 
 }
+.about-me-list .ac.is-active>.ac-header .icon-btn-open {
+    transform: rotate(180deg);
+}
+
 .about-me-item-title {
     font-weight: 600;
 font-size: 16px;
@@ -97,9 +103,9 @@ margin-bottom: 24px;
     color: var(--white);
     padding: 0;
 }
-.ac {
+/* .ac {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-}
+} */
 .about-me-list-first {
     gap: 32px;
 }
@@ -111,14 +117,22 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: -0.02em;
 }
+.about-me-list-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
 .about-me-item-skills {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+background-color: #ed3b44;
+padding: 53px 27px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: -0.02em;
+
 }
-.icon-return {
-    transform: rotate(-180deg)
-}
+
 
 
 @media screen and (min-width: 768px){
@@ -127,6 +141,9 @@ letter-spacing: -0.02em;
     }
     .about-me-wrapper-text {
         padding: 64px 64px 436px 64px;
+    }
+    .about-me-list {
+        margin-bottom: 64px;
     }
     .about-me-item {
         padding-bottom: 32px;
@@ -164,6 +181,9 @@ letter-spacing: -0.02em;
     .about-me {
         padding-top: 96px;
         padding-bottom: 82px;
+    }
+    .about-me-list {
+        margin-bottom: 96px;
     }
     .about-me-wrap {
         flex-direction: row;
