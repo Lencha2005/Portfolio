@@ -128,16 +128,15 @@ stroke: black;
     padding: 18px;
     width: 68px;
     height: 68px;
-    transition: border var(--timing-function);
+    /* transition: fill var(--timing-function); */
     }
-    .btn-arrow:hover,
+    /* .btn-arrow:hover,
     .btn-arrow:focus {
-        border: 1.5px solid rgba(250, 250, 250, 0.5);
-    }
+        fill: var(--red);
+    } */
     .icon-arrow{
         width: 32px;
         height: 32px;
-        fill: white;
     }
 }
 @media screen and (min-width: 1440px) {
