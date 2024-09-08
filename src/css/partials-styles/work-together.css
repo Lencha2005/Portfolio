@@ -178,11 +178,11 @@ transition: border-color var(--timing-function);
 }
 
 
-.beckdrop.is-open {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
 }
-.beckdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
