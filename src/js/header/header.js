@@ -5,7 +5,7 @@ const listMobileMenu = document.querySelector('.mobile-menu');
 const itemMobileMenu = document.querySelectorAll('.js-mobile-item');
 const listMenu = document.querySelector('.js-menu-nav-list');
 const itemMenu = document.querySelectorAll('.menu-nav-item');
-
+console.log(btnBurger)
 
 function onOpenMobileMenu(){
 listMobileMenu.classList.add('is-open')
@@ -30,5 +30,6 @@ itemMobileMenu.forEach((item) => {
 itemMenu.forEach((item) => {
 item.addEventListener('click', onOpenMenu)
 });
+
 
 
