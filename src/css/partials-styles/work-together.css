@@ -178,11 +178,11 @@ transition: border-color var(--timing-function);
 }
 
 
-.deckdrop.is-open {
+.beckdrop.is-open {
     opacity: 1;
     visibility: visible;
 }
-.deckdrop {
+.beckdrop {
     position: fixed;
     top: 0;
     left: 0;

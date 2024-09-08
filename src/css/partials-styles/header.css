@@ -9,7 +9,7 @@
     position: absolute;
     top: 32px;
     left: 0;
-    right: 0;
+    right: 0px;
     background: transparent;
 }
 
@@ -32,11 +32,16 @@
 .btn-mobile-menu-open {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 8px;
     border: none;
   list-style: none;
   background: transparent;
     stroke: var(--white);
+    transition: stroke var(--timing-function);
+}
+.btn-mobile-menu-open:hover,
+.btn-mobile-menu-open:focus {
+    stroke:#e0373f;
 }
 
 /* ============ mobile menu ============= */
