@@ -6,17 +6,23 @@
 }
 
 .header {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    right: 0;
+    background: transparent;
 }
 
 .header-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .logo-wrap {
     display: flex;
     gap: 8px;
+    width: 172px;
 }
 
 .logo-icon {
@@ -24,6 +30,9 @@
 }
 
 .btn-mobile-menu-open {
+    position: absolute;
+    top: 0;
+    right: 0;
     border: none;
   list-style: none;
   background: transparent;
@@ -115,8 +124,11 @@ background-color: #e0373f;;
     .btn-mobile-menu-open {
         display: none;
     }
-    .header-container{
-     
+    .header-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 auto;
     }
     .btn-link-order-project{
         display: block;
@@ -149,12 +161,5 @@ transition: color var(--timing-function);
     .btn-menu:hover,
     .btn-menu:focus {
         color: #e0373f;
-    }
-}
-
-@media screen and (min-width: 1440px){
-   
-    .header-container{
-       
     }
 }
