@@ -1,4 +1,5 @@
 import Accordion from 'accordion-js';
+import pathSprite from '../../img/sprite.svg';
 
 const dataInfo = [
     {
@@ -36,8 +37,10 @@ const listEl = document.querySelector('.faq-list');
 function renderContentAccordion(data){
     const markupItem = data.map(item => 
         ` <li class="faq-item ac">
-        <h3 class="faq-item-title ac-header"><button class="faq-item-btn ac-trigger"><span>${item.title.toUpperCase()}</span></button></h3>
-        <div class="ac-panel"></div>
+        <h3 class="faq-item-title ac-header">
+        <button class="faq-item-btn ac-trigger"><span class="faq-span-title">${item.title}</span></button>
+        </h3>
+        <div class="ac-panel">
         <p class="faq-item-text ac-text">${item.description}</p>
         </div>
         </li>`).join('');
@@ -46,9 +49,32 @@ function renderContentAccordion(data){
 };
 console.log(renderContentAccordion(dataInfo));
 
+const addIconTriggerBtn = () => {
+    const triggerBtns = document.querySelectorAll('.faq-item-btn');
+    triggerBtns.forEach(triggerBtn => {
+        const markup = ` <svg class="faq-item-icon">
+          <use href="${pathSprite}#arrow-top"></use>
+        </svg>`
+        triggerBtn.insertAdjacentHTML("beforeend", markup)
+
+    });
+};
+
+addIconTriggerBtn();
+const scrollDown = (currentElement) => {
+    const elementRect = currentElement.getBoundingClientRect();
+    const elementY = elementRect.top;
+    const viewportHeight = window.innerHeight;
+
+    window.scrollTo({
+        top: elementY + window.scrollY - (viewportHeight / 2) + (elementRect.height / 2),
+        behavior: 'smooth'
+    });
+
+};
+
 new Accordion('.accordion',{
     duration: 500,
     showMultiple: true,
-    openOnInit: [0],
     onOpen: currentElement => scrollDown(currentElement),
 });
