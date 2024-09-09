@@ -200,6 +200,7 @@ transition: border-color var(--timing-function);
     height: 100%;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
     transition: opacity var(--timing-function);
 
 }
@@ -224,6 +225,10 @@ transition: border-color var(--timing-function);
     padding: 0;
     stroke: var(--white);
 }
+.modal-close-btn:hover {
+stroke: var(--red)
+}
+
 .modal-slose-icon {
     width: 22px;
     height: 22px;
