@@ -10,8 +10,7 @@ padding-top: 32px;
 }
 .work-img {
     display: inline-block;
-    width: 44px;
-    height: 44px;
+    border-radius: 12px;
     margin-right: 4px;
     transform: translateY(8px);
 
@@ -121,6 +120,8 @@ transition: border-color var(--timing-function);
     border-color: var(--white);
 }
 
+/* ===================== Tablet ======================= */
+
 @media screen and (min-width: 768px) {
     .work-together {
         padding-top: 48px;
@@ -161,10 +162,14 @@ transition: border-color var(--timing-function);
     .work-img {
         width: 70px;
         height: 70px;
+        border-radius: 24px;
         margin-right: 20px;
         transform: translateY(13px);
     }
 }
+
+/* ===================== Tablet ======================= */
+
 @media screen and (min-width: 1440px) {
     .work-together {
         padding-top: 82px;
@@ -185,10 +190,12 @@ transition: border-color var(--timing-function);
     }
 }
 
+/* ===================== Modal ======================= */
 
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
+    pointer-events: all;
 }
 .backdrop {
     position: fixed;
@@ -229,7 +236,7 @@ transition: border-color var(--timing-function);
 stroke: var(--red)
 }
 
-.modal-slose-icon {
+.modal-close-icon {
     width: 22px;
     height: 22px;
 }
@@ -256,7 +263,7 @@ color: rgba(250, 250, 250, 0.6);
         padding: 64px;
     }
   
-    .modal-slose-icon {
+    .modal-close-icon {
         width: 24px;
         height: 24px;
     }
