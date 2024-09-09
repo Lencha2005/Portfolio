@@ -1,5 +1,6 @@
 import Accordion from 'accordion-js';
 
+
 const elBtn = document.querySelectorAll('.title-wrap');
 
 const scrollDown = (currentElement) => {

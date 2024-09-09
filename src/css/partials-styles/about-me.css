@@ -118,30 +118,36 @@ margin-bottom: 24px;
 .about-me-img {
     width: 100%;
 }
-.about-me-item-text {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-}
-.about-me-list-skills {
-    display: flex;
-    flex-wrap: wrap;
-}
-.about-me-item-skills {
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-background-color: #ed3b44;
-padding: 53px 27px;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: -0.02em;
 
-}
 
 
 /* ================ Swiper ================= */
 
+.about-me-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    }
+    .about-me-list-skills {
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+    .about-me-item-skills {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    background-color: transparent;
+    padding: 53px 27px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    
+    }
+    .about-me-item-skills.swiper-slide-next {
+        background-color: var(--red);
+        border: none;
+    }
 
 /* ================ Tablet ================= */
 
