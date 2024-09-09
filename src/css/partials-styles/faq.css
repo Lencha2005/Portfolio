@@ -1,3 +1,5 @@
+@import url(accordion-js/dist/accordion.css);
+
 .faq {
     padding-top: 32px;
     padding-bottom: 64px;
@@ -17,7 +19,11 @@ margin-bottom: 32px;
     flex-direction: column;
     gap: 40px;
 }
-.faq-item {
+.faq-item.ac {
+    margin-top: 8px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
 }
 .faq-item-title {
     font-weight: 600;
