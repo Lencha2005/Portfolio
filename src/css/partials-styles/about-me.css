@@ -77,11 +77,11 @@
     width: 36px;
     height: 36px;
     fill: var(--white);
-    /* outline: none; */
+    outline: none;
 }
 
 .btn-open-description:focus {
-    outline: none;
+    /* outline: none; */
 };
 
 .accordion-container .ac .ac-trigger {
