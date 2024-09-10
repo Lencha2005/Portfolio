@@ -61,11 +61,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 302px 152px 64px 152px;
+    /* padding: 302px 152px 64px 152px;
     display: flex;
     gap: 289px;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     overflow-y: auto;
   transition: opacity var(--timing-function), visibility var(--timing-function);
 }
@@ -74,6 +74,15 @@
     .mobile-menu {
   background-image: url(/img/hero/hero-mobile@2x.png);
     }  
+}
+.mobile-container {
+    position: relative;
+    padding: 302px 152px 64px 152px;
+    display: flex;
+    /* gap: 289px; */
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 .mobile-menu.is-open {
     /* transform: translate(0); */
@@ -84,7 +93,7 @@
 .btn-close-menu {
     position: absolute;
     top: 32px;
-    right: 48px;
+    right: 32px;
     border: none;
   list-style: none;
   background: transparent;
@@ -117,6 +126,8 @@ color: var(--red);
 }
 
 .btn-link-mobile-order-project {
+    position: absolute;
+    bottom: 32px;
     border: none;
     border-radius: 60px;
 padding: 14px 31px;
