@@ -20,13 +20,15 @@
     background-position: center;
     /* margin-bottom: 32px; */
 }
-.cover-container {
-    /* width: 100%;
-    height: auto;
-    padding: 0; */
+.covers-container {
+  position: relative;
+  display: flex;
+  max-height: 508px;
+  justify-content: center;
+  overflow: hidden;
 }
 .cover-wrap {
-    position: absolute;
+    /* position: absolute; */
   right: -1000px;
   left: -400px;
   overflow: hidden;
