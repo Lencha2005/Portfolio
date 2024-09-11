@@ -20,7 +20,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     <script type="module" crossorigin src="/Portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-DGAGuMyW.js">
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/vendor-HdWFjXwp.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-CgurEJK6.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-B-gCTPiL.css">
   </head>
   <body>
     <header class="header">
@@ -189,6 +189,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             </div>
             </li>
         </ul>
+        <div class="about-me-skills-wrap">
         <div class="skills-container swiper">
         <ul class="about-me-list-skills swiper-wrapper">
             <li class="about-me-item-skills swiper-slide">HTML/CSS</li>
@@ -197,13 +198,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             <li class="about-me-item-skills swiper-slide">Node.js</li>
             <li class="about-me-item-skills swiper-slide">React Native</li>
             <li class="about-me-item-skills swiper-slide">Soft skills</li>
+            <li class="about-me-item-skills swiper-slide">Redux</li>
         </ul>
-        <div class="swiper-button-next"><button class="btn-next">
-            <svg class="btn-next-icon">
-                <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-black" width="28" height="28"></use>
+        <div class="skills-swiper-button">
+            <button class="skills-btn-next">
+            <svg class="skills-btn-next-icon">
+                <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-black"></use>
             </svg>
-        </button></div>
+        </button>
     </div>
+    </div>
+</div>
     </div>
 </section>
       <section class="benefits" id="benefits">
@@ -248,7 +253,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
       <section class="projects" id="projects">
     <div class="container">
         <h2 class="projects-title">Projects</h2>
-        <div class="projects-wrap">
+        <div class="projects-wrap swiper swiper-project">
+            <ul class="projects-list swiper-wrapper">
+                <li class="projects-item swiper-slide">
             <div class="projects-wrap-top">
                 <ul class="projects-wrap-list">
                     <li class="projects-wrap-item">#react</li>
@@ -284,12 +291,91 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             />
                 </picture>
             </div>
+        
+    </li>
+    <li class="projects-item swiper-slide">
+        <div class="projects-wrap-top">
+            <ul class="projects-wrap-list">
+                <li class="projects-wrap-item">#react</li>
+                <li class="projects-wrap-item">#js</li>
+                <li class="projects-wrap-item">#node.js</li>
+                <li class="projects-wrap-item">#git</li>
+            </ul>
+            <p class="projects-wrap-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+            <a class="projects-btn-see-project" href="https://github.com/Lencha2005/Portfolio.git" target="_blank">See progect</a>
         </div>
+        <div class="projects-wrap-bottom">
+            <picture>
+        <source
+        srcset="/Portfolio/assets/project-second-BNgQRukX.jpg 1x, /Portfolio/assets/project-second@2x-Dse2D9o_.jpg 2x"
+          width="614"
+          height="385"
+          media="(min-width: 768px)"
+        />
+        <source
+        srcset="/Portfolio/assets/project-second-mobile-BEimIPz1.jpg 1x, /Portfolio/assets/project-second-mobile@2x-DV_Kdaim.jpg 2x"
+          width="311"
+          height="195"
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class="projects-img"
+          src="/Portfolio/assets/project-second-mobile-BEimIPz1.jpg"
+          alt="second project"
+          width="311"
+          height="195"
+          loading="lazy"
+        />
+            </picture>
+        </div>
+    
+</li>
+<li class="projects-item swiper-slide">
+    <div class="projects-wrap-top">
+        <ul class="projects-wrap-list">
+            <li class="projects-wrap-item">#react</li>
+            <li class="projects-wrap-item">#js</li>
+            <li class="projects-wrap-item">#node.js</li>
+            <li class="projects-wrap-item">#git</li>
+        </ul>
+        <p class="projects-wrap-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+        <a class="projects-btn-see-project" href="https://github.com/Lencha2005/Portfolio.git" target="_blank">See progect</a>
+    </div>
+    <div class="projects-wrap-bottom">
+        <picture>
+    <source
+    srcset="/Portfolio/assets/project-third-g3f_KZI0.jpg 1x, /Portfolio/assets/project-third@2x-BT_E9HBT.jpg 2x"
+      width="614"
+      height="385"
+      media="(min-width: 768px)"
+    />
+    <source
+    srcset="/Portfolio/assets/project-third-mobile-CUyAKcaJ.jpg 1x, /Portfolio/assets/project-third-mobile@2x-Cv1-iD6W.jpg 2x"
+      width="311"
+      height="195"
+      media="(max-width: 767px)"
+    />
+
+    <img
+      class="projects-img"
+      src="/Portfolio/assets/project-third-mobile-CUyAKcaJ.jpg"
+      alt="third project"
+      width="311"
+      height="195"
+      loading="lazy"
+    />
+        </picture>
+    </div>
+
+</li>
+    
+    </ul>
             <div class="project-wrap-btn-arrow">
                 <button class="btn-arrow"><svg class="icon-arrow arrow-left"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
                 <button class="btn-arrow"><svg class="icon-arrow"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
             </div>
-        
+        </div>
     </div>
 </section>
       <section class="faq" id="faq">
