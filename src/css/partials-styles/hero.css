@@ -36,28 +36,33 @@ text-align: left;
 .hero-item {
     border: 1px solid rgba(250, 250, 250, 0.2);
 border-radius: 60px;
-padding: 9px 8px;
 max-height: 37px;
 max-width: 37px;
 font-size: 13px;
 letter-spacing: -0.02em;
 transition: border-color var(--timing-function);
 }
-.hero-item:first-child {
+.hero-link {
+    display: block;
+    padding: 9px 8px;
+}
+.hero-link.first {
     padding: 9px 11px;
 }
 
 .hero-item:first-child + .hero-item {
-    padding: 8px 10px;
+    padding: 0px 0px;
 }
 
 .link-email {
     border: 1px solid rgba(250, 250, 250, 0.2);
 border-radius: 60px;
-padding: 8px 11px;
+
 max-width: 178px;
 }
-
+.hero-link.email {
+    padding: 8px 11px;
+}
 .hero-item:hover,
 .hero-item:focus {
 border-color: var(--white);
@@ -98,20 +103,24 @@ font-size: 12px;
     }
     .hero-item {
     font-size: 16px;
-    padding: 18px 16px;
     max-width: 55px;
     max-height: 55px;
     }
-    .hero-item:first-child {
+    .hero-link {
+        display: block;
+        padding: 18px 16px;
+    }
+    .hero-link.first {
         padding: 18px 19px;
     }
-    .hero-item:first-child + .hero-item {
-        padding: 18px 18px;
-    }
+    
     .link-email {
-        padding: 18px 24px;
+        
         max-width: 223px;
         max-height: 55px;
+    }
+    .hero-link.email {
+        padding: 18px 24px;
     }
   }
   @media screen and (min-width: 1440px){
