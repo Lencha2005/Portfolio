@@ -3,7 +3,7 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.skills-container', {
     modules: [Navigation, Keyboard, Mousewheel],
     speed: 1000,
     loop: true,
