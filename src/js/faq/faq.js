@@ -47,7 +47,7 @@ function renderContentAccordion(data){
     
     listEl.insertAdjacentHTML('beforeend', markupItem);
 };
-console.log(renderContentAccordion(dataInfo));
+renderContentAccordion(dataInfo);
 
 const addIconTriggerBtn = () => {
     const triggerBtns = document.querySelectorAll('.faq-item-btn');
@@ -75,6 +75,6 @@ const scrollDown = (currentElement) => {
 
 new Accordion('.accordion',{
     duration: 500,
-    showMultiple: true,
+    showMultiple: false,
     onOpen: currentElement => scrollDown(currentElement),
 });

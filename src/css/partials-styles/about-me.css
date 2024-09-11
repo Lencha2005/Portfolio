@@ -107,7 +107,6 @@ line-height: 1.5;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 color: rgba(250, 250, 250, 0.4);
-margin-bottom: 24px;
 }
 .about-me-wrap-list {
     display: flex;
@@ -129,33 +128,77 @@ margin-bottom: 24px;
 
 
 /* ================ Swiper ================= */
+.about-me-skills-wrap {
+    position: relative;
+}
+.skills-container.swiper {
+    position: static;
+  width: 260px;
+  height: 130px;
+  margin: 0;
+}
+    .skills-container {
+        margin: 0;
+    }
 
-.about-me-item-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    }
     .about-me-list-skills {
-        /* display: flex;
-        flex-wrap: wrap; */
+        display: flex;
+    justify-content: start;
+    max-width: 260px;
+    padding: 0;
+    margin: 0;
+    transition: transform var(--timing-function);
     }
-    .about-me-item-skills {
-        width: 130px;
-        height: 130px;
+
+    .about-me-list-skills .about-me-item-skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+width: 130px;
+height: 130px;
         border-radius: 100%;
     border: 1px solid rgba(250, 250, 250, 0.2);
     background-color: transparent;
-    padding: 53px 27px;
+    text-align: center;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
+    flex-shrink: 0;
     
     }
-    .about-me-item-skills.swiper-slide-next {
+    .about-me-list-skills .about-me-item-skills:first-child {
         background-color: var(--red);
         border: none;
     }
 
+    .skills-container .skills-swiper-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 88888;
+        width: 28px;
+        height: 28px;
+       
+    }
+.skills-btn-next {
+    background: transparent;
+    border: none;
+    color: #3b3b3b;
+    padding: 0;
+}
+.skills-swiper-button .skills-btn-next-icon {
+    width: 28px;
+    height: 28px;
+    stroke: #3b3b3b;
+    fill: transparent;
+    rotate: 180deg;
+    transition: stroke var(--timing-function);
+}
+.skills-swiper-button:hover .skills-btn-next-icon {
+    stroke: var(--white)
+}
+.skills-container>.skills-swiper-button-next::after {
+    content: none;
+}
 /* ================ Tablet ================= */
 
 @media screen and (min-width: 768px){
@@ -201,13 +244,32 @@ margin-bottom: 24px;
             width: 40px;
             padding: 10px;
         }
-        
+    
 
 /* ================ Swiper ================= */
 
-
+.skills-container.swiper {
+  width: 600px;
+  height: 200px;
 }
+.skills-container {
+    width: 200px;
+    height: 200px;
+}
+.about-me-list-skills {
+    max-width: 600px;
+    }
+    
+    .about-me-list-skills .about-me-item-skills {
 
+width: 200px;
+height: 200px;
+}
+.skills-swiper-button .skills-btn-next-icon {
+    width: 40px;
+    height: 40px;
+}
+}
 /* ================ Desktop ================= */
 
 @media screen and (min-width: 1440px) {
@@ -232,5 +294,26 @@ margin-bottom: 24px;
 }
 
 /* ================ Swiper ================= */
+.about-me-skills-wrap {
+    padding-left: 32px;
+padding-right: 32px;
+}
 
+
+.skills-container.swiper {
+    width: 1200px;
+    height: 200px;
+  }
+  .skills-container {
+      width: 200px;
+      height: 200px;
+     
+  }
+  .about-me-list-skills {
+      max-width: 1200px;
+      }
+      .skills-container .skills-swiper-button {
+        right: 32px;
+    }
+      
 }
