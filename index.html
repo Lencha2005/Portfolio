@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/Portfolio/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
                 />
       <svg class="logo-icon" width="84" height="19"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#man"></use></svg>
       </div>
-      <button class="btn-menu btn-menu-js" type="button">Menu</button>
+      <button class="btn-menu btn-menu-js" type="button" aria-label="open and close menu">Menu</button>
       <ul class="menu-nav-list js-menu-nav-list">
           <li class="menu-nav-item">
             <a href="#about-me" class="menu-nav-link">About me</a>
@@ -54,7 +54,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             <a href="#faq" class="menu-nav-link">FAQ</a>
           </li>
         </ul>
-      <button class="btn-burger" type="button">
+      <button class="btn-burger" type="button" aria-label="open-menu">
       <svg class="header-mobile-menu-icon" width="28" height="28"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#burger"></use>
       </svg>
   </button>
@@ -67,7 +67,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
   <!-- ---------mobile menu------- -->
   <div class="mobile-menu">
     <div class="container mobile-container">
-      <button class="btn-close-menu" type="button">
+      <button class="btn-close-menu" type="button" aria-label="close-menu">
       <svg class="icon-close-menu" width="28" height="28">
       <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#close"></use>
   </svg>
@@ -86,7 +86,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     <main>
       <!-- Loads the specified .html file -->
       <section class="hero-section">
-    <button id="btn-up">Up</button>
+    <button id="btn-up" aria-label="up">Up</button>
     <div class="container hero-container">
     <h1 class="hero-title">Hello.<br> I’m Fullstack developer Lloyd Jefferson.</h1>
     <ul class="hero-list">
@@ -142,7 +142,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             <li class="about-me-item ac">
                 <div class="title-wrap ac-header">
                 <h3 class="about-me-item-title">About me</h3>
-                <button class="btn-open-description ac-trigger">
+                <button class="btn-open-description ac-trigger" aria-label="open description">
                     <svg class="icon-btn-open">
                         <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-top"></use>
                     </svg>
@@ -158,7 +158,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             <li class="about-me-item ac">
                 <div class="title-wrap ac-header">
                 <h3 class="about-me-item-title">Role</h3>
-                <button class="btn-open-description ac-trigger">
+                <button class="btn-open-description ac-trigger" aria-label="open description">
                     <svg class="icon-btn-open">
                         <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-top"></use>
                     </svg>
@@ -175,7 +175,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             <li class="about-me-item ac">
                 <div class="title-wrap ac-header">
                 <h3 class="about-me-item-title">Education</h3>
-                <button class="btn-open-description ac-trigger">
+                <button class="btn-open-description ac-trigger" aria-label="open description">
                     <svg class="icon-btn-open">
                         <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-top"></use>
                     </svg>
@@ -202,7 +202,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
             <li class="about-me-item-skills swiper-slide">Redux</li>
         </ul>
         <div class="skills-swiper-button">
-            <button class="skills-btn-next">
+            <button class="skills-btn-next" aria-label="next skill">
             <svg class="skills-btn-next-icon">
                 <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-black"></use>
             </svg>
@@ -374,8 +374,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
     </ul>
             <div class="project-wrap-btn-arrow">
                 
-                <button class="btn-arrow swiper-projects-button-prev"><svg class="icon-arrow arrow-left"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
-                <button class="btn-arrow swiper-projects-button-next"><svg class="icon-arrow"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
+                <button class="btn-arrow swiper-projects-button-prev" aria-label="prev project"><svg class="icon-arrow arrow-left"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
+                <button class="btn-arrow swiper-projects-button-next" aria-label="next project"><svg class="icon-arrow"><use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#arrow-white"></use></svg></button>
             </div>
         </div>
     </div>
@@ -452,9 +452,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
                 <p class="reviews-text-item">Thanks for the excellent work on the project! His talent and professionalism deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.</p>
             </li>
         </ul>
-        <div class="project-wrap-btn-arrow">
-            <button class="btn-arrow"><svg class="icon-arrow arrow-left"><use href="/img/sprite.svg#arrow-white"></use></svg></button>
-            <button class="btn-arrow"><svg class="icon-arrow"><use href="/img/sprite.svg#arrow-white"></use></svg></button>
+        <div class="reviews-wrap-btn-arrow">
+            <button class="btn-arrow" aria-label="prev preview"><svg class="icon-arrow arrow-left"><use href="/img/sprite.svg#arrow-white"></use></svg></button>
+            <button class="btn-arrow" aria-label="next preview"><svg class="icon-arrow"><use href="/img/sprite.svg#arrow-white"></use></svg></button>
         </div>
     </div>
 </section> -->
@@ -495,7 +495,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
         <label class="form-label">
             <input class="form-input" type="text" name="comments" placeholder="comments" required>
         </label>
-        <button class="form-btn" type="submit">Send</button>
+        <button class="form-btn" type="submit" aria-label="send form">Send</button>
     </form>
     <ul class="work-list">
         <li class="work-item">
@@ -511,7 +511,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-norma
 
 <div class="backdrop">
     <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" aria-label="close modal">
             <svg class="modal-close-icon">
                 <use href="/Portfolio/assets/sprite-DoXsVtLZ.svg#close"></use>
             </svg>
