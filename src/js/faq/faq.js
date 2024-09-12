@@ -38,7 +38,7 @@ function renderContentAccordion(data){
     const markupItem = data.map(item => 
         ` <li class="faq-item ac">
         <h3 class="faq-item-title ac-header">
-        <button class="faq-item-btn ac-trigger"><span class="faq-span-title">${item.title}</span></button>
+        <button class="faq-item-btn ac-trigger" aria-label="open description"><span class="faq-span-title">${item.title}</span></button>
         </h3>
         <div class="ac-panel">
         <p class="faq-item-text ac-text">${item.description}</p>
