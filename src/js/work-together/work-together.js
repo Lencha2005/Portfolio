@@ -17,7 +17,7 @@ function onSuccess() {
     if (emailRegex.test(user.email)){
         emailInput.classList.add('success');
         emailInput.classList.remove('error');
-        messageInput.textContent = 'Success!';
+        // messageInput.textContent = 'Success!';
         messageInput.classList.add('success');
         messageInput.classList.remove('error');
     } else {
