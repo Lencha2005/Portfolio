@@ -6,10 +6,10 @@ const messageInput = document.querySelector('#input-message');
 const modal = document.querySelector('.backdrop');
 const btnClose = document.querySelector('.modal-close-btn');
 
-let user = {
-    email: '',
-    comment: '',
-};
+// let user = {
+//     email: '',
+//     comment: '',
+// };
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -26,38 +26,35 @@ function onSuccess(){
         emailInput.classList.add('error');
     
 }
-}
+};
 
-
-
-// function onSuccess() {
-//     if (emailRegex.test(user.email)){
-//         emailInput.classList.add('success');
-//         emailInput.classList.remove('error');
-//         // messageInput.textContent = 'Success!';
-//         messageInput.classList.add('success');
-//         messageInput.classList.remove('error');
-//     } else {
-//         emailInput.classList.remove('success');
-//         emailInput.classList.add('error');
-//         messageInput.textContent = 'Invalid email, try again!';
-//         messageInput.classList.remove('success');
-//         messageInput.classList.add('error');
-//     } 
-// };
+const scroll = {
+    disableScroll() {
+        document.body.style.overflow = 'hidden';
+    },
+    enableScroll() {
+        document.body.style.overflow = 'visible';
+    }
+        }
 
 async function onFormSubmit(event){
     event.preventDefault();
-    console.dir(event.currentTarget.elements);
-    user = {
-        email: event.currentTarget[0].value.trim(),
-        comment: event.currentTarget[1].value.trim(),
+
+    const {email, comments} = event.currentTarget.elements;
+
+    onSuccess()
+
+    const user = {
+        email: email.value.trim(),
+        comment: comments.value.trim(),
     };
-    
-onSuccess()
+    console.log(user)
     
     try{
     const contact = await fetchcooperation(user);
+    modal.classList.add('is-open');
+
+   scroll.disableScroll();
     console.log(contact);
 } catch {
     console.log(error);
@@ -67,7 +64,7 @@ emailInput.classList.remove('success');
 messageInput.classList.remove('error');
 messageInput.textContent = '';
 
-modal.classList.add('is-open')
+
 
 
 };
