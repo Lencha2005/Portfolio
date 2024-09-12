@@ -283,6 +283,14 @@ height: 200px;
     .about-me-list {
         margin-bottom: 96px;
     }
+    .about-me-item>.ac-panel{
+        display: flex;
+        justify-content: flex-end;
+        /* width: 612px; */
+    }
+    .about-me-wrap-list {
+        width: 612px;
+    }
     .about-me-wrap {
         flex-direction: row;
     }

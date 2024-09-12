@@ -13,21 +13,38 @@ let user = {
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function onSuccess() {
-    if (emailRegex.test(user.email)){
-        emailInput.classList.add('success');
-        emailInput.classList.remove('error');
-        // messageInput.textContent = 'Success!';
-        messageInput.classList.add('success');
-        messageInput.classList.remove('error');
-    } else {
-        emailInput.classList.remove('success');
+function onSuccess(){
+    // event.preventDefault()
+    const emailValue = emailInput.value;
+    console.log(emailValue);
+    if (emailRegex.test(emailValue)){
+    emailInput.classList.add('success');
+    emailInput.classList.remove('error');
+   
+} else {
+    emailInput.classList.remove('success');
         emailInput.classList.add('error');
-        messageInput.textContent = 'Invalid email, try again!';
-        messageInput.classList.remove('success');
-        messageInput.classList.add('error');
-    } 
-};
+    
+}
+}
+
+
+
+// function onSuccess() {
+//     if (emailRegex.test(user.email)){
+//         emailInput.classList.add('success');
+//         emailInput.classList.remove('error');
+//         // messageInput.textContent = 'Success!';
+//         messageInput.classList.add('success');
+//         messageInput.classList.remove('error');
+//     } else {
+//         emailInput.classList.remove('success');
+//         emailInput.classList.add('error');
+//         messageInput.textContent = 'Invalid email, try again!';
+//         messageInput.classList.remove('success');
+//         messageInput.classList.add('error');
+//     } 
+// };
 
 async function onFormSubmit(event){
     event.preventDefault();
@@ -58,6 +75,6 @@ function onCloseModal(){
     modal.classList.remove('is-open');
     };
     
-
+emailInput.addEventListener('input', onSuccess);
 formEl.addEventListener('submit', onFormSubmit);
 btnClose.addEventListener('click', onCloseModal);
