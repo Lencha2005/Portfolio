@@ -1,15 +1,16 @@
-import { fetchcooperation } from "./work-together-api";
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
-export const formEl = document.querySelector('.work-form')
+import { getRequest } from "./work-together-api";
+import { modalCloseOptions, scrollOptions } from './modal-handler';
+import { markup } from './work-together-markup';
+
+
+const formEl = document.querySelector('.work-form')
 const emailInput = document.querySelector('#input-email');
 const messageInput = document.querySelector('#input-message');
-const modal = document.querySelector('.backdrop');
-const btnClose = document.querySelector('.modal-close-btn');
+const backdrop = document.querySelector('.backdrop');
 
-// let user = {
-//     email: '',
-//     comment: '',
-// };
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -20,58 +21,54 @@ function onSuccess(){
     if (emailRegex.test(emailValue)){
     emailInput.classList.add('success');
     emailInput.classList.remove('error');
+    messageInput.textContent = '';
+    return
    
 } else {
     emailInput.classList.remove('success');
         emailInput.classList.add('error');
-    
-}
+        messageInput.textContent = 'Invalid email, try again!';
+} 
 };
-
-const scroll = {
-    disableScroll() {
-        document.body.style.overflow = 'hidden';
-    },
-    enableScroll() {
-        document.body.style.overflow = 'visible';
-    }
-        }
 
 async function onFormSubmit(event){
     event.preventDefault();
 
     const {email, comments} = event.currentTarget.elements;
 
-    onSuccess()
+    onSuccess();
 
-    const user = {
+    const formData = {
         email: email.value.trim(),
         comment: comments.value.trim(),
     };
-    console.log(user)
+
     
     try{
-    const contact = await fetchcooperation(user);
-    modal.classList.add('is-open');
+    const {title, message} = await getRequest(formData);
 
-   scroll.disableScroll();
-    console.log(contact);
-} catch {
-    console.log(error);
+    backdrop.classList.add('is-open');
+   scrollOptions.disableScroll();
+   backdrop.innerHTML = markup(title, message);
+
+    modalCloseOptions.onBind(backdrop);
+    modalCloseOptions.onBackdropClick();
+
+    formEl.reset();
+} catch (error) {
+    showError(`❌ ${error.response.data.message}`)
+} finally {
+    emailInput.classList.remove('success');
+        emailInput.classList.remove('error');
 }
-formEl.reset();
-emailInput.classList.remove('success');
-messageInput.classList.remove('error');
-messageInput.textContent = '';
-
-
-
-
 };
-function onCloseModal(){
-    modal.classList.remove('is-open');
-    };
+
+function showError(message) {
+    iziToast.error({
+      message: `${message}`,
+      position: 'topRight',
+    });
+};
     
 emailInput.addEventListener('input', onSuccess);
 formEl.addEventListener('submit', onFormSubmit);
-btnClose.addEventListener('click', onCloseModal);
