@@ -4,19 +4,18 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const swiper = new Swiper('.swiper-project', {
+const swiper = new Swiper('.swiper.swiper-projects', {
     speed: 1000,
     modules: [Navigation, Keyboard, Mousewheel],
-    // loop: false,
     direction: 'horizontal',
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevWl: '.swiper-button-prev'
+        nextEl: '.swiper-projects-button-next',
+        prevEl: '.swiper-projects-button-prev'
     },
     mousewheel: {
         enabled: true,
         invert: true,
-        eventsTarget: '.swiper-project'
+        eventsTarget: '.swiper-projects'
     },
     keyboard: {
         enabled: true,
