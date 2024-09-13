@@ -4,7 +4,7 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const swiper = new Swiper('.swiper.swiper-projects', {
+let swiper = new Swiper('.swiper.swiper-projects', {
     speed: 1000,
     modules: [Navigation, Keyboard, Mousewheel],
     direction: 'horizontal',
@@ -22,7 +22,6 @@ const swiper = new Swiper('.swiper.swiper-projects', {
         onlyInViewport: true,
         pageUpDown: true,
     },
-    // centerInsufficientSlides: true,
     breakpoints: {
         320: {
           slidesPerView: 1,

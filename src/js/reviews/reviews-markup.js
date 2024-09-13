@@ -1,6 +1,8 @@
 export function createCardTemplate(cardInfo) {
+
+    const {avatar_url, author, review} = cardInfo;
 return `
-<li class="reviews-item">
+<li class="reviews-item swiper-slide">
                 <img 
                 class="reviews-img"
                 src="${avatar_url}"

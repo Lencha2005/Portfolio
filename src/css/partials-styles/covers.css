@@ -69,6 +69,9 @@
 right: -2000px;
 height: 960px;
 }
+.covers-container {
+  max-height: 960px;
+}
  
 }
 @media screen and (min-width: 1440px){
