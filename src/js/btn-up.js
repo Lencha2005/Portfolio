@@ -1,4 +1,4 @@
-export const btnUp = document.querySelector('#btn-up');
+const btnUp = document.querySelector('#btn-up');
 
 window.onscroll = function () {
   scrollFunction();

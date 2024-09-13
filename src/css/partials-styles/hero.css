@@ -57,12 +57,13 @@ transition: border-color var(--timing-function);
 .link-email {
     border: 1px solid rgba(250, 250, 250, 0.2);
 border-radius: 60px;
-
 max-width: 178px;
 }
+
 .hero-link.email {
     padding: 8px 11px;
 }
+
 .hero-item:hover,
 .hero-item:focus {
 border-color: var(--white);
@@ -75,15 +76,13 @@ border-color: var(--white);
     .hero-item {
 font-size: 12px;
     }
-
 }
+
   @media screen and (min-width: 768px) {
     .hero-section {
         background-image: url(/img/hero/hero-tablet.png);
         padding-top: 300px;
         padding-bottom: 32px;
-        /* padding-left: 21px;
-        padding-right: 32px; */
     }
     @media screen and (min-resolution: 192dpi) {
         .hero-section {
@@ -115,7 +114,6 @@ font-size: 12px;
     }
     
     .link-email {
-        
         max-width: 223px;
         max-height: 55px;
     }
@@ -123,6 +121,8 @@ font-size: 12px;
         padding: 18px 24px;
     }
   }
+
+
   @media screen and (min-width: 1440px){
     .hero-section {
         background-image: url(/img/hero/hero.png);
@@ -135,8 +135,6 @@ font-size: 12px;
     }
 
     .hero-title {
-   
     margin: 0 146px 243px 146px;
     }
-    
   }

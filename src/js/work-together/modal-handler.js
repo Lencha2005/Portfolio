@@ -31,20 +31,13 @@ export const modalCloseOptions = {
   }
   
   export const scrollOptions = {
-    // fixBlocks: document.querySelectorAll('[data-fix-block]'),
   
     disableScroll() {
       document.body.style.overflow = 'hidden';
-    //   this.fixBlocks.forEach(el => el.style.paddingRight - this.paddingOffset);
-    //   document.body.style.paddingRight = this.paddingOffset;
     },
   
     enableScroll() {
       document.body.style.overflow = 'visible';
-    //   this.fixBlocks.forEach(el => {
-    //     el.style.paddingRight = '0px';
-    //   });
-    //   document.body.style.paddingRight = '0px';
     },
   };
   

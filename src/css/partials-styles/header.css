@@ -1,12 +1,15 @@
 .btn-menu {
     display: none;
 }
+
 .btn-link-order-project {
     display: none;
 }
+
 .menu-nav-list {
     display: none;
 }
+
 .header {
     position: absolute;
     top: 32px;
@@ -17,7 +20,6 @@
 
 .header-container {
     position: relative;
-    /* max-width: 343px; */
     margin: 0 auto;
 }
 
@@ -76,21 +78,12 @@
     pointer-events: all;
 }
 
-/* @media screen and (min-resolution: 192dpi) {
-    .mobile-menu {
-  background-image: url(/img/hero/hero-mobile@2x.png);
-    }  
-} */
 .mobile-container {
     position: relative;
     max-width: 343px;
-    /* margin: o auto; */
     margin-left: auto;
     margin-right: auto;
-    /* padding: 302px 138px 398px 138px; */
-    /* padding: 302px 103px 64px; */
     display: flex;
-    /* gap: 289px; */
      flex-direction: column;
     align-items: center;
     justify-content: center; 
@@ -107,6 +100,7 @@
     stroke: var(--white);
     transition: stroke var(--timing-function);
 }
+
 .btn-close-menu:hover {
     stroke: #e0373f;
 }
@@ -155,7 +149,6 @@ background-color: #e0373f;;
         display: none;
     }
     .header-container {
-        /* max-width: 768px; */
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -168,11 +161,11 @@ background-color: #e0373f;;
     padding: 18px 24px;
     min-width: 166px;
     height: 55px;
-color: var(--white);
-font-size: 16px;
-letter-spacing: -0.02em;
-background-color: var(--red);
-transition: background-color var(--timing-function);
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    background-color: var(--red);
+    transition: background-color var(--timing-function);
     }
     .btn-link-order-project:hover,
     .btn-link-order-project:focus {
@@ -181,18 +174,17 @@ transition: background-color var(--timing-function);
     .btn-menu {
         display: block;
         border: none;
-font-size: 16px;
-letter-spacing: -0.02em;
-text-decoration: underline;
-background: transparent;
-text-decoration-skip-ink: none;
-color: var(--white);
-transition: color var(--timing-function);
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        text-decoration: underline;
+        background: transparent;
+        text-decoration-skip-ink: none;
+        color: var(--white);
+        transition: color var(--timing-function);
     }
     .btn-menu:hover {
         color: #e0373f;
     }
-
     .menu-nav-list {
         position: absolute;
         top: 32px;
@@ -200,7 +192,6 @@ transition: color var(--timing-function);
         opacity: 0;
         visibility: hidden;
         transform: translate(-50%, 0);
-        /* right: auto; */
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -220,5 +211,4 @@ transition: color var(--timing-function);
     .menu-nav-item:hover {
         color: #e0373f;
     }
-    
 }

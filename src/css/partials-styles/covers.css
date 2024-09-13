@@ -1,24 +1,11 @@
-/* .covers {
-    background-image: url(/img/covers/cover-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 508px;
-} */
-/* @media screen and (min-resolution: 192dpi) {
-    .covers {
-  background-image: url(/img/covers/cover-mobile@2x.png);
-    }   
-} */
-
 .covers {
   height: 508px;
-  
-    background-image: url(/img/covers/cover-mobile.png);
+  background-image: image-set(
+        url(/img/covers/cover-mobile.png) 1x,
+        url(/img/covers/cover-mobile@2x.png) 2x );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* margin-bottom: 32px; */
 }
 .covers-container {
   position: relative;
@@ -28,7 +15,6 @@
   overflow: hidden;
 }
 .cover-wrap {
-    /* position: absolute; */
   right: -1000px;
   left: -400px;
   overflow: hidden;
@@ -36,7 +22,6 @@
 }
 .cover-list {
     width: 100%;
-     /* height: 8vh; */
    display: flex;
    gap: 20px;
    transform: rotate(17deg); 
@@ -68,7 +53,9 @@
 @media screen and (min-width: 768px){
   .covers {
     height: 960px;
-      background-image: url(/img/covers/cover-tablet.png);
+      background-image: image-set(
+        url(/img/covers/cover-tablet.png) 1x,
+        url(/img/covers/cover-tablet@2x.png) 2x );
   }
   .cover-img {
     width: 544px;

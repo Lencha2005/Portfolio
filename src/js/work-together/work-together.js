@@ -11,17 +11,17 @@ const emailInput = document.querySelector('#input-email');
 const messageInput = document.querySelector('#input-message');
 const backdrop = document.querySelector('.backdrop');
 
-
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function onSuccess(){
-    // event.preventDefault()
+    
     const emailValue = emailInput.value;
-    console.log(emailValue);
+   
     if (emailRegex.test(emailValue)){
     emailInput.classList.add('success');
     emailInput.classList.remove('error');
     messageInput.textContent = '';
+
     return
    
 } else {
@@ -43,7 +43,6 @@ async function onFormSubmit(event){
         comment: comments.value.trim(),
     };
 
-    
     try{
     const {title, message} = await getRequest(formData);
 
